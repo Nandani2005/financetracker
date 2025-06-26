@@ -60,8 +60,12 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation( "com.airbnb.android:lottie:+")
-    implementation ("com.github.PhilJay:MPAndroidChart:v3.3.0")
+
+
+    implementation(libs.mpandroidchart)
+    implementation("com.github.PhilJay:MPAndroidChart:3.1.0")
+    implementation("com.airbnb.android:lottie:6.1.0")
+
 }
 
 

@@ -7,13 +7,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class homepageactivity : AppCompatActivity() {
+class homepageactivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.homepage)
          val name=intent.getStringExtra("name")
         val nameWrite=findViewById<TextView>(R.id.nameView)
+
         nameWrite.append(name)
     }
 }

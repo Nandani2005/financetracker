@@ -36,6 +36,7 @@
         android:background="@drawable/cruve"
         android:drawableLeft="@android:drawable/ic_dialog_email"
         android:hint="Email"
+        android:textColorHint="#948585"
         android:padding="10dp"
         />
     <Button
@@ -62,8 +63,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/otp"
         android:layout_margin="12dp"
-        android:textColorHint="#000"
-        android:textSize="25dp"
+        android:textColorHint="#948585"
+        android:textSize="20dp"
         android:background="@drawable/cruve"
         android:drawableLeft="@android:drawable/ic_lock_idle_lock"
         android:hint="Enter OTP"

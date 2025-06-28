@@ -16,5 +16,6 @@ class homepageactivity : AppCompatActivity() {
         val nameWrite=findViewById<TextView>(R.id.nameView)
 
         nameWrite.append(name)
+
     }
 }

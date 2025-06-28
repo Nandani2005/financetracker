@@ -25,6 +25,7 @@ class loginactivity : AppCompatActivity() {
         val myLayout = findViewById<LinearLayout>(R.id.signUpLayout)
         val loginEmail = findViewById<TextView>(R.id.logInEmail)
         val loginPassword = findViewById<TextView>(R.id.logInPassword)
+        val trans= Intent(this@loginactivity,homepageactivity::class.java)
 
 // Optional: You can add validation here
 
@@ -43,11 +44,11 @@ class loginactivity : AppCompatActivity() {
         val login=findViewById<Button>(R.id.logIn)
         login.setOnClickListener() {
             if (loginEmail.text.isNotEmpty() && loginPassword.text.isNotEmpty()) {
-                val tr = Intent(this@loginactivity, homepageactivity::class.java)
-                tr.putExtra("email", loginEmail.text.toString())
-                tr.putExtra("password", loginPassword.text.toString()) // if needed
-
-                startActivity(tr)
+                trans.putExtra("email", loginEmail.text.toString())
+                trans.putExtra("password", loginPassword.text.toString()) // if needed
+                val name="sri"
+                trans.putExtra("name",name)
+                startActivity(trans)
                 finish()
             } else {
                 Toast.makeText(this, "Please enter login details", Toast.LENGTH_SHORT).show()
@@ -73,7 +74,7 @@ class loginactivity : AppCompatActivity() {
                     ) {
                     Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show()
                 } else {
-                    val trans= Intent(this@loginactivity,homepageactivity::class.java)
+
                     trans.putExtra( "name",Name.text.toString())
                     trans.putExtra( "email",email.text.toString())
                     startActivity(trans)

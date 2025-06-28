@@ -16,6 +16,9 @@
             android:name=".categorypage"
             android:exported="false" />
         <activity
+            android:name=".history"
+            android:exported="false" />
+        <activity
             android:name=".ui.theme.forgetpass"
             android:exported="false" />
         <activity

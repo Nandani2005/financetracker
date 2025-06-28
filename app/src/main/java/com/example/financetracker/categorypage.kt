@@ -21,10 +21,9 @@ class categorypage : AppCompatActivity() {
         mySpinner = findViewById(R.id.mySpinner)
 
         // Dropdown list items
-        val items = arrayOf("Select Item", "Apple", "Banana", "Cherry", "Date")
-
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, items)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        val items = arrayOf("Month", "January", "February", "March", "April" , "May" , "June" , "July" ,"August" , "September" , "October" , "November" , "December")
+        val adapter = ArrayAdapter(this, R.layout.spinner_item, items)
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item)
         mySpinner.adapter = adapter
 
         mySpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {

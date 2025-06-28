@@ -44,7 +44,6 @@ android:background="@drawable/homefullbg"
                 android:background="@drawable/filter" />
 
 
-
         </LinearLayout>
 
         <?xml version="1.0" encoding="utf-8"?>
